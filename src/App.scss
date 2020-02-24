@@ -46,24 +46,27 @@
   }
 }
 .afterFlagDescription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2{
-        margin-bottom: 0!important;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0!important;
+
+  h2 {
+    margin-bottom: 0 !important;
+  }
   @media screen and (max-width: 900px) {
     display: flex;
     h2 {
       font-size: 1.1rem;
       align-self: center;
-      margin-bottom: 0!important;
+      margin-bottom: 0 !important;
     }
   }
 }
 .flagDescription {
   @media screen and (max-width: 900px) {
     display: flex;
+    padding: 0;
   }
 }
 
