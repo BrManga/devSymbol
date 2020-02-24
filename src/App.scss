@@ -8,9 +8,15 @@
   height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
+  @media screen and (max-width: 900px) {
+    background-color: black;
+  }
 }
 .right {
   background-color: #a61a1d;
+  @media screen and (max-width: 900px) {
+    overflow: hidden;
+  }
 }
 .box {
   text-align: center;
@@ -22,9 +28,15 @@
   background-color: black;
   border: 1px solid white;
   letter-spacing: 10px;
-}
-@media screen and (max-width: 900px) {
-  .box {
+  &:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transform: scale(1.2);
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 900px) {
     width: 45px;
     height: 80px;
     font-size: 3rem;
@@ -32,35 +44,27 @@
     border-top: 1px solid white;
     border-bottom: 1px solid white;
   }
-  .right {
-    overflow: hidden;
-  }
-  .left {
-    background-color: black;
-  }
-  .afterFlagDescription {
+}
+.afterFlagDescription {
     display: flex;
-  }
-  .afterFlagDescription h2 {
-    font-size: 1.1rem;
-    align-self: center;
-  }
-  .flagDescription {
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin-bottom: 0!important;
+    }
+  @media screen and (max-width: 900px) {
     display: flex;
-  }
-  .flag {
-    height: 20px !important;
-    width: 25px !important;
-    align-self: center;
+    h2 {
+      font-size: 1.1rem;
+      align-self: center;
+      margin-bottom: 0!important;
+    }
   }
 }
-.box:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-  transform: scale(1.2);
-  transition: 0.6s;
-  cursor: pointer;
+.flagDescription {
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
 }
 
 .title {
@@ -72,20 +76,21 @@
   text-align: center;
   width: 100%;
   font-size: 3rem;
+  @media screen and (max-width: 900px) {
+    font-size: 1.8rem;
+  }
 }
 .subtitle {
   width: 100%;
   text-align: center;
-  font-size: 1rem;
-}
-@media screen and (max-width: 900px) {
-  .mainTitle {
-    font-size: 1.8rem;
-  }
-  .subtitle{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 0 10px;
+  @media screen and (max-width: 900px) {
     font-size: 0.8rem;
   }
 }
+
 .meaningPart {
   height: 65%;
   display: flex;
@@ -127,12 +132,15 @@
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   background: hsla(67, 95%, 95%, 1);
 }
-#one {
-  border: solid 5px hsla(0, 95%, 35%, 1);
-}
+
 .flag {
   height: 50px;
   width: 75px;
+  @media screen and (max-width: 900px) {
+    height: 20px !important;
+    width: 25px !important;
+    align-self: center;
+  }
 }
 .smallFlag {
   height: 30px;

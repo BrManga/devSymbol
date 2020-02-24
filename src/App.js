@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Box from "./components/Box/Box";
 import Description from "./components/Description/Description";
